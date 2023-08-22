@@ -1,0 +1,23 @@
+server:
+  port: ${PORT:8080}
+
+logging:
+  level:
+    root: error
+
+spring:
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+    ttl: ${CACHE_TTL:360000}
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://root:r1nhaback3nd@localhost:27017/?minPoolSize=100&maxPoolSize=300}
+      database: ${MONGODB_DATABASE:admin}
+      auto-index-creation: true
+  jpa:
+    open-in-view: false
+  application:
+    name: rinha-de-backend-2023-q3
+  http:
+    log-request-details: false
