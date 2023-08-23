@@ -14,7 +14,7 @@ services:
       - PORT=80
       - REDIS_HOST=redis-rinha
       - REDIS_PORT=6379
-      - CACHE_TTL=180000
+      - CACHE_TTL=600000
       - MONGODB_URI=mongodb://root:r1nhaback3nd@mongodb-rinha:27017/?minPoolSize=0&maxPoolSize=300
       - MONGODB_DATABASE=admin
     deploy:
@@ -37,7 +37,7 @@ services:
       - PORT=80
       - REDIS_HOST=redis-rinha
       - REDIS_PORT=6379
-      - CACHE_TTL=180000
+      - CACHE_TTL=600000
       - MONGODB_URI=mongodb://root:r1nhaback3nd@mongodb-rinha:27017/?minPoolSize=0&maxPoolSize=300
       - MONGODB_DATABASE=admin
     deploy:
